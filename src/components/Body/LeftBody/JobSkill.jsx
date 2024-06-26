@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import FieldDesc from './FieldDesc'
+import FieldDesc from '../FieldDesc'
 
 const JobSkill = () => {
   return (

@@ -1,7 +1,7 @@
-import Body from "@/components/Body";
-import Nav from "@/components/Nav";
-import NavBottom from "@/components/NavBottom";
-import Image from "next/image";
+import Body from "@/components/Body/Body";
+import Nav from "@/components/Nav/Nav";
+import NavBottom from "@/components/Nav/NavBottom";
+
 
 export default function Home() {
   return (

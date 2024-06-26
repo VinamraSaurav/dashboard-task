@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import FieldDesc from './FieldDesc'
+import FieldDesc from '../FieldDesc'
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
 
             <div className='grid grid-cols-2 gap-x-12 gap-y-6'>
-                <FieldDesc title={"Company size"} desc={"1k-2k Employees"} />
+                <FieldDesc title={"Company size"} desc={"1k - 2k Employees"} />
                 <FieldDesc title={"Type"} desc={"Private"} />
                 <FieldDesc title={"Sector"} desc={"Information Technology, Infrastructure"} />
                 <FieldDesc title={"Funding"} desc={"Bootstrapped"} />

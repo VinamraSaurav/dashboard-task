@@ -1,6 +1,6 @@
 import React from "react";
-import LeftBody from "./LeftBody";
-import RightBody from "./RightBody";
+import LeftBody from "./LeftBody/LeftBody";
+import RightBody from "./RightBody/RightBody";
 
 const Body = () => {
   return (
