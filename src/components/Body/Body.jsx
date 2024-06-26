@@ -5,13 +5,12 @@ import RightBody from "./RightBody/RightBody";
 const Body = () => {
   return (
     <div className="max-w-[108rem] mx-auto">
-      <div className="md:flex">
-        <div className=" md:w-9/12">
+      <div className="md:flex justify-between">
+        <div className="md:max-w-[82.4375rem] md:w-8/12 lg:w-atuo">
           <LeftBody />
         </div>
-        <div className="md:w-3/12">
-          {" "}
-          <RightBody />{" "}
+        <div className="md:max-w-[25.5625rem] w-screen md:w-4/12  lg:w-auto">
+          <RightBody />
         </div>
       </div>
     </div>

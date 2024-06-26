@@ -11,15 +11,15 @@ import { TbUserCheck } from "react-icons/tb";
 
 const RightBody = () => {
   return (
-    <div className='bg-right-control border-l-[1px] border-b-[1px] border-neutral-grey-1 py-9 px-6 h-full w-full shadow-3xl flex flex-col gap-y-6'>
-        <div className='flex justify-center items-center gap-x-6 font-generalsans'>
-            <div className='py-3 px-6 flex justify-center items-center text-orange-300 border border-orange-300 bg-orange-50 gap-x-2 rounded-md w-40 cursor-pointer'>
+    <div className='bg-right-control border-l-[1px] border-b-[1px] border-neutral-grey-1 py-9 px-6 h-full shadow-3xl flex flex-col gap-y-6'>
+        <div className='flex justify-center items-center gap-x-1 sm:gap-x-6 font-generalsans flex-wrap gap-y-3'>
+            <div className='py-3 px-6 flex justify-center items-center text-orange-300 border border-orange-300 bg-orange-50 gap-x-2 rounded-md w-40 cursor-pointer '>
                 <GoTrash className='text-xl'/>
-                <div className='text-base'>Delete job</div>
+                <div className='text-base font-bold'>Delete job</div>
             </div>
-            <div className='py-3 px-6 flex justify-center items-center text-white border border-orange-150 bg-orange-300 gap-x-2 rounded-md w-40 cursor-pointer '>
+            <div className='py-3 px-3 lg:px-6 flex justify-center items-center text-white border border-orange-150 bg-orange-300 gap-x-2 rounded-md w-40 cursor-pointer '>
                 <GoPencil className='text-xl'/>
-                <div className='text-base'>Edit job</div>
+                <div className='text-base font-bold '>Edit job</div>
             </div>
         </div>
         <div className='w-full font-generalsans'>

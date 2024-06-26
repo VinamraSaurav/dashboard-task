@@ -14,8 +14,8 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className=" max-w-[108rem] relative border-b-[1px] border-neutral-grey-1 mx-auto">
-      <nav className="flex items-center justify-between  py-6 sm:py-2 px-10">
-        <div className="bg-neutral-grey-1 px-7 py-2 cursor-pointer">
+      <nav className="flex items-center justify-between  py-1 px-1 sm:py-2 md:px-10">
+        <div className="bg-neutral-grey-1 px-7 py-[0.5625rem] cursor-pointer">
           <div className="text-orange-300 font-bold font-satoshivariable text-xl ">
             Logo
           </div>
@@ -27,7 +27,7 @@ const Nav = () => {
             <div>
               <div className="absolute bg-orange-300 h-[6px] w-[6.5px] rounded-full top-[6px] right-[6.5px]"></div>
               <div>
-                <PiBellSimple className="text-3xl" />
+                <PiBellSimple className="text-[2rem]" />
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Nav = () => {
                 width={40}
                 height={40}
                 alt="logo"
-                className="rounded-full h-9 w-9"
+                className="rounded-full h-[2.5rem] w-[2.5rem]"
               />
               <div>
                 <FaAngleDown className="text-xs font-extralight" />
@@ -51,24 +51,36 @@ const Nav = () => {
        
         
       </nav>
-      <div className={` ${open? "" : "hidden "} absolute border border-neutral-grey-1 shadow-3xl w-44 bg-white rounded-md right-4 top-[5.3rem] sm:top-[4.6rem] px-2 py-1`}>
-        <div className="sm:hidden group text-text-2 font-generalsans font-semibold w-full flex justify-between items-center text-lg p-2 border-b-[1px] border-neutral-grey-1 rounded-md  hover:text-orange-300 hover:cursor-pointer  ">
+      <div className={` ${open? "" : "hidden "} absolute border border-neutral-grey-1 shadow-3xl w-44 bg-white rounded-md right-4 top-[4.3rem] sm:top-[5.3rem] px-2 py-1 z-20`}>
+        <div 
+        onClick={()=>setOpen(false)}
+        className="sm:hidden group text-text-2 font-generalsans font-semibold w-full flex justify-between items-center  p-2 border-b-[1px] border-neutral-grey-1 rounded-md  hover:text-orange-300 hover:cursor-pointer  ">
           <div>Jobs</div>
           <FiBriefcase className="text-md text-text-1 group-hover:text-orange-300" />
         </div>
-        <div className="sm:hidden group text-text-2 font-generalsans font-semibold w-full flex justify-between items-center text-lg p-2 border-b-[1px] border-neutral-grey-1 rounded-md  hover:text-orange-300 hover:cursor-pointer ">
+        <div 
+        onClick={()=>setOpen(false)}
+        className="sm:hidden group text-text-2 font-generalsans font-semibold w-full flex justify-between items-center  p-2 border-b-[1px] border-neutral-grey-1 rounded-md  hover:text-orange-300 hover:cursor-pointer ">
           <div>Messages</div>
           <FiMessageSquare className="text-md text-text-1 group-hover:text-orange-300" />
         </div>
-        <div className="sm:hidden group text-text-2 font-generalsans font-semibold w-full flex justify-between items-center text-lg p-2 border-b-[1px] border-neutral-grey-1 rounded-md  hover:text-orange-300 hover:cursor-pointer ">
+        <div 
+        onClick={()=>setOpen(false)}
+        className="sm:hidden group text-text-2 font-generalsans font-semibold w-full flex justify-between items-center  p-2 border-b-[1px] border-neutral-grey-1 rounded-md  hover:text-orange-300 hover:cursor-pointer ">
           <div>Payments</div>
           <PiHandCoins className="text-md text-text-1 group-hover:text-orange-300" />
         </div>
-        <div className="group text-text-2 font-generalsans font-semibold w-full flex justify-between items-center text-lg p-2 rounded-md  hover:text-orange-300 hover:cursor-pointer ">
+        <div 
+        onClick={()=>setOpen(false)}
+        className="group text-text-2 font-generalsans font-semibold w-full flex justify-between items-center  p-2 rounded-md  hover:text-orange-300 hover:cursor-pointer ">
           <div>Log Out</div>
           <FiLogOut className="text-md text-text-1 group-hover:text-orange-300" />
         </div>
         </div>
+
+        <div 
+        onClick={()=>setOpen(false)}
+        className={`${open? "" : "hidden "} bg-transparent top-0 left-0 right-0 bottom-0 h-svh absolute z-10`}></div>
     </div>
   );
 };

@@ -4,9 +4,9 @@ const JobAbout = () => {
   return (
     <div>
       <div className="border-b-[1px] border-neutral-grey-1">
-        <div className="px-20 py-9 font-generalsans flex flex-col gap-y-2">
-          <div className="font-medium text-sm text-text-1">About the job</div>
-          <div className="text-base font-medium text-text-5 leading-7">
+        <div className="md:pl-[6.25rem] px-3 sm:pl-10 pt-8 pb-9 font-generalsans flex flex-col gap-y-2">
+          <div className="font-semibold text-sm text-text-1">About the job</div>
+          <div className="text-base font-semibold text-text-5 leading-7">
             <ol className="list-inside list-decimal">
               <li> Handle the UI/UX research design</li>
               <li>
