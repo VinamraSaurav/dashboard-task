@@ -27,7 +27,7 @@ This is a one-page frontend application that provides a captivating dashboard UI
    ```
 3. **Start the development server**:
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. **Open [http://localhost:3000](http://localhost:3000) in your browser** to view the application.
